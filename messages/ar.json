@@ -1,10 +1,37 @@
 {
   "HomePage": {
-    "title": "مرحبا بالعالم!",
-    "about": "انتقل إلى صفحة حول"
+    "TRUSTED_BY": "موثوق به من قبل جميع المطورين في الإمارات العربية المتحدة",
+    "HERO_TITLE": "اعرض، اشتري، واربح مع",
+    "HERO_DESCRIPTION": "قم بالتنزيل الآن، وابدأ معاملات العقارات الخاصة بك!",
+    "OUR_NEWEST_YOUR_HIGHEST": "أحدث ما لدينا، أعلى ما لديك",
+    "HOW_TO_GER_COMMISSION": "كيف تحصل على أعلى عمولة؟",
+    "WITH_MAKYEE": "مع ماكي برو",
+    "IMMEDIATE_WITHDRAW": "سحب فوري بنسبة 80%",
+    "GET_INSTANT_ACCESS": "احصل على وصول فوري إلى 80% من عمولتك بمجرد تأكيد المعاملة. لا انتظار طويل، فقط مدفوعات سريعة!",
+    "LEARN_MORE": "اعرف المزيد",
+    "COMMISSION_ON_COMPLETION": "100% عمولة عند الإكمال",
+    "EARN_COMMISSION": "اكسب عمولتك الكاملة بمجرد اكتمال معاملة العقار بنجاح.",
+    "NEVER_SEEN": "لم يسبق رؤيته",
+    "COMMISSION_EFFORTLESS": "مع ماكي برو، يصبح الاحتفاظ بنسبة 100% من عمولتك أمراً سهلاً.",
+    "MULTIPLE_WITHDRAW_OPTIONS": "خيارات سحب متعددة",
+    "FAST_PAYOUT": "احصل على وصول فوري إلى 80% من عمولتك بمجرد تأكيد المعاملة. لا انتظار طويل، فقط مدفوعات سريعة!",
+    "BANK_TRANSFER": "تحويل بنكي",
+    "CRYPTO": "عملات رقمية",
+    "CHEQUE": "شيك",
+    "CASH": "نقداً",
+    "YOUR_COMMISSION": "عمولتك",
+    "THE_DIFFERENCES": "الاختلافات",
+    "WITH_OUR_MAKYEE_PRO": "مع ماكي برو الخاص بنا",
+    "AVERAGE_BROKERAGE": "متوسط الوساطة",
+    "MAKYEE_PRO": "ماكي برو",
+    "UP_TO": "يصل إلى",
+    "ESTATE_EXPERIENCE": "معاملات عقارية سلسة وشفافة لتجربة عقارية أكثر ذكاءً",
+    "LISTED_PROPERTY": "عقارات معروضة",
+    "VERIFIED_USERS": "مستخدمون موثقون",
+    "DEVELOPERS": "مطوّرون"
   },
   "LayoutMetaData": {
-    "title": "Next + TS + TAILWIND + I18N",
-    "description": "حزمة البدء لموقع الويب متعدد اللغات مع تطبيق nextjs router."
+    "title": "نكست + تي إس + تيلويند + آي18إن",
+    "description": "حزمة البداية للموقع متعدد اللغات مع موجه تطبيق نكست جي إس."
   }
 }

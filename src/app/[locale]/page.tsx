@@ -1,12 +1,15 @@
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Hero from "@/components/home/Hero";
+import OurNewest from "@/components/home/OurNewest";
+import YourCommission from "@/components/home/YourCommission";
+import RealEstateExperience from "@/components/home/RealEstateExperience";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
   return (
-    <div>
-      <h1>{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
-    </div>
+    <>
+      <Hero />
+      <OurNewest />
+      <YourCommission />
+      <RealEstateExperience />
+    </>
   );
 }

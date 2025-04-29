@@ -1,14 +1,18 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
+
+import { routing } from "@/i18n/routing";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const messages = await getMessages({ locale: params.locale });
+  const { locale } = await params;
+  const messages = await getMessages({ locale: locale });
   return {
     title: messages.LayoutMetaData.title || "Next + TS + TAILWIND + I18N",
     description:
@@ -37,7 +41,9 @@ export default async function LocaleLayout({
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
