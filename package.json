@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
