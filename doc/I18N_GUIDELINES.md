@@ -7,8 +7,6 @@ This document provides a comprehensive guide on how to use the multi-language fe
 - [Overview](#overview)
 - [Project Structure](#project-structure)
 - [How to Add New Text](#how-to-add-new-text)
-- [How to Use Translations in Components](#how-to-use-translations-in-components)
-- [Language Switching](#language-switching)
 - [RTL Support](#rtl-support)
 - [Best Practices](#best-practices)
 
@@ -88,9 +86,7 @@ const YourComponent = () => {
 
   return (
     <div>
-      <h1>
-        {t("HERO_TITLE")} <span>MAKYEE</span>
-      </h1>
+      <h1>{t("HERO_TITLE")}</h1>
       <p>{t("HERO_DESCRIPTION")}</p>
     </div>
   );
