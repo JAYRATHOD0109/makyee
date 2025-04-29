@@ -2,5 +2,9 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "LayoutMetaData": {
+    "title": "Next + TS + TAILWIND + I18N",
+    "description": "Starter pack for the multilingual website with nextjs app router."
   }
 }

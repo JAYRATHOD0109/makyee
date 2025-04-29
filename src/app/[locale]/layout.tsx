@@ -3,10 +3,19 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 
-export const metadata = {
-  title: "MAKYEE",
-  description: "List, Buy, and Earn with MAKYEE",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const messages = await getMessages({ locale: params.locale });
+  return {
+    title: messages.LayoutMetaData.title || "Next + TS + TAILWIND + I18N",
+    description:
+      messages.LayoutMetaData.description ||
+      "Starter pack for multilanguale website with nextjs app router.",
+  };
+}
 
 export default async function LocaleLayout({
   children,
