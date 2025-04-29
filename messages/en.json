@@ -30,6 +30,22 @@
     "VERIFIED_USERS": "Verified Users",
     "DEVELOPERS": "Developers"
   },
+  "Header": {
+    "LIST_1": "Features",
+    "LIST_2": "Testimonials",
+    "LIST_3": "FAQ’s",
+    "BUTTON_TEXT": "Contact"
+  },
+  "Footer": {
+    "BUY_SELL": "Buy / Sell Property on the Go. Anywhere, Anytime.",
+    "ITEM_1": "Benefits",
+    "ITEM_2": "Features",
+    "ITEM_3": "Testimonials",
+    "ITEM_4": "FAQ’s",
+    "ITEM_5": "Contact us",
+    "DESIGN_BY": "Design by π",
+    "PRIVACY_POLICY": "Privacy Policy"
+  },
   "LayoutMetaData": {
     "title": "Next + TS + TAILWIND + I18N",
     "description": "Starter pack for the multilingual website with nextjs app router."

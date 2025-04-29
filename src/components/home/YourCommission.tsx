@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import Container from "../common/Container";
+import Image from "next/image";
 
 const YourCommission: React.FC = () => {
   const t = useTranslations("HomePage");
 
   return (
     <div className="relative">
-      <div className="absolute -left-20 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
+      <div className="absolute ltr:-left-20 rtl:right-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
         <div
           className="w-full h-full rounded-full"
           style={{
@@ -51,6 +52,129 @@ const YourCommission: React.FC = () => {
                 100%
               </span>
             </p>
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <p className="text-lg text-center mt-10 md:mt-16">
+          We were featured in
+        </p>
+        <div className="py-3 md:py-4 my-6 md:my-8 relative overflow-hidden">
+          <div className="relative flex animate-slide-left">
+            <div className="flex-shrink-0 gap-5 md:gap-10 flex mx-5 justify-around space-x-6 w-[1440px]">
+              <Image
+                src="/asset/lovin-dubai.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/property-news.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/real-estate-today.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/uae-stories.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/bazaar.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/gulf-time.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+            </div>
+            <div className="flex-shrink-0 gap-5 md:gap-10 flex mx-5 justify-around space-x-6 w-[1440px]">
+              <Image
+                src="/asset/lovin-dubai.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/property-news.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/real-estate-today.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/uae-stories.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/bazaar.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/gulf-time.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+            </div>
+            <div className="flex-shrink-0 gap-5 md:gap-10 flex mx-5 justify-around space-x-6 w-[1440px]">
+              <Image
+                src="/asset/lovin-dubai.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/property-news.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/real-estate-today.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/uae-stories.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/bazaar.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+              <Image
+                src="/asset/gulf-time.svg"
+                alt="company_name"
+                width={150}
+                height={40}
+              />
+            </div>
           </div>
         </div>
       </Container>

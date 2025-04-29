@@ -27,6 +27,15 @@ module.exports = {
         // Add custom border radius if needed
       },
       // Add other theme extensions as needed
+      animation: {
+        "slide-left": "slide-left 12s linear infinite",
+      },
+      keyframes: {
+        "slide-left": {
+          from: { transform: translateX },
+          to: { transform: "translateX(-1480px)" },
+        },
+      },
     },
   },
   plugins: [],

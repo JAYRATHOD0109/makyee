@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute -left-10 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
+      <div className="absolute ltr:-left-10 rtl:right-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
         <div
           className="w-full h-full rounded-full"
           style={{
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
               {t("TRUSTED_BY")}
             </span>
           </p>
-          <h1 className="text-dark-gunmetal font-inter max-w-3xl text-[40px]/11 px-6 md:px-0 md:text-[78px]/23 font-bold">
+          <h1 className="text-dark-gunmetal font-inter max-w-3xl rtl:max-w-2xl text-[40px]/11 px-6 md:px-0 md:text-[78px]/23 font-bold">
             <span>{t("HERO_TITLE")} &nbsp;</span>
             <span className="text-primary-red">MAKYEE</span>
           </h1>
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
           src="/asset/hero.png"
           width={700}
           height={750}
-          className="absolute hidden md:block -right-40 top-0"
+          className="absolute hidden md:block ltr:-right-40 rtl:-left-40 top-0"
           quality={100}
           alt="mobiles"
         />

@@ -72,7 +72,7 @@ const OurNewest: React.FC = () => {
   return (
     <div className="relative">
       <Container className="pt-15">
-        <div className="absolute right-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
+        <div className="absolute ltr:right-0 rtl:left-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
           <div
             className="w-full h-full rounded-full"
             style={{
@@ -228,7 +228,7 @@ const OurNewest: React.FC = () => {
                   {t("BANK_TRANSFER")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border- rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
                 <Image
                   src="/asset/crypto.svg"
                   width={24}
@@ -239,7 +239,7 @@ const OurNewest: React.FC = () => {
                   {t("CRYPTO")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border- rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
                 <Image
                   src="/asset/cheque.svg"
                   width={24}
@@ -250,7 +250,7 @@ const OurNewest: React.FC = () => {
                   {t("CHEQUE")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border- rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
                 <Image
                   src="/asset/cash.svg"
                   width={24}

@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../common/Container";
+import { useTranslations } from "next-intl";
 
 const Footer: React.FC = () => {
+  const t = useTranslations("Footer");
+
   return (
     <Container
       backgroundClassName="bg-[#fafafa]"
@@ -17,7 +20,7 @@ const Footer: React.FC = () => {
       />
       <p className="max-w-67.5 mx-auto mt-6 mb-7.5 text-center">
         <span className="text-black text-lg/7.5 font-semibold font-inter">
-          Buy / Sell Property on the Go. Anywhere, Anytime.
+          {t("BUY_SELL")}
         </span>
       </p>
       <p className="bg-[#18181A] py-4 px-5 w-fit flex items-center gap-1.5 rounded-xl mx-auto mb-5 md:mb-15">
@@ -30,29 +33,29 @@ const Footer: React.FC = () => {
       </p>
       <div className="flex items-center justify-center pb-5 md:pb-0">
         <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-3.5 md:mr-4.5 hidden md:block">
-          Benefits
+          {t("ITEM_1")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5 hidden md:block" />
         <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
-          Features
+          {t("ITEM_2")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
         <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
-          Testimonials
+          {t("ITEM_3")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
         <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
-          FAQ’s
+          {t("ITEM_4")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
         <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium">
-          Contact us
+          {t("ITEM_5")}
         </span>
       </div>
       <hr className="text-[#1D1D20] mt-15 mb-10 h-px hidden md:block" />
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
         <span className="text-[#94969D] text-lg/7 font-medium md:block hidden">
-          Design by π
+          {t("DESIGN_BY")}
         </span>
         <div className="flex gap-2.5">
           <div className="size-11 flex justify-center items-center bg-[#18181A] rounded-xl">
@@ -90,7 +93,7 @@ const Footer: React.FC = () => {
           © 2025 Makyee. All Rights Reserved.
         </span>
         <span className="text-[#94969D] text-lg/7 font-medium">
-          Privacy Policy
+          {t("PRIVACY_POLICY")}
         </span>
       </div>
     </Container>

@@ -3,8 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import Container from "../common/Container";
+import { useTranslations } from "next-intl";
 
 const Header: React.FC = () => {
+  const t = useTranslations("Header");
+
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = useCallback(() => {
@@ -34,23 +37,23 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <Link href="#" className="pr-5">
               <span className="font-instrument-sans text-primary-black text-[17px] leading-6.5 font-semibold">
-                Features
+                {t("LIST_1")}
               </span>
             </Link>
             <Link href="#" className="px-5">
               <span className="font-instrument-sans text-primary-black text-[17px] leading-6.5 font-semibold">
-                Testimonials
+                {t("LIST_2")}
               </span>
             </Link>
             <Link href="#" className="pl-5">
               <span className="font-instrument-sans text-primary-black text-[17px] leading-6.5 font-semibold">
-                FAQ’s
+                {t("LIST_3")}
               </span>
             </Link>
           </div>
           <button className="bg-primary-red py-2 px-5.5 rounded-xl">
             <span className="text-[17px] leading-6.5 text-white font-instrument-sans font-semibold">
-              Contact
+              {t("BUTTON_TEXT")}
             </span>
           </button>
         </Container>
