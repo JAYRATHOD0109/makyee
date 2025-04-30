@@ -1,9 +1,9 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import Container from "../common/Container";
-import { useTranslations } from "next-intl";
 
 const Header: React.FC = () => {
   const t = useTranslations("Header");
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       }`}
     >
       <nav>
-        <Container className="px-8 md:px-15 py-4 flex justify-between items-center">
+        <Container className="py-8 px-4 md:px-15 md:py-4 flex justify-between items-center">
           <Link href="#">
             <Image src="/asset/logo.svg" width={97} height={24} alt="logo" />
           </Link>
@@ -51,11 +51,19 @@ const Header: React.FC = () => {
               </span>
             </Link>
           </div>
-          <button className="bg-primary-red py-2 px-5.5 rounded-xl">
+          <button className="bg-primary-red py-2 px-5.5 rounded-xl hidden md:block">
             <span className="text-[17px] leading-6.5 text-white font-instrument-sans font-semibold">
               {t("BUTTON_TEXT")}
             </span>
           </button>
+          <div className="md:hidden">
+            <Image
+              src="/asset/mobile-menu.svg"
+              width={24}
+              height={24}
+              alt="logo"
+            />
+          </div>
         </Container>
       </nav>
     </header>

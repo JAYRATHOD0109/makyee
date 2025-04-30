@@ -1,8 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
 
 import Container from "../common/Container";
 
@@ -35,11 +35,11 @@ const RealEstateExperience = () => {
 
   useEffect(() => {
     if (startCount) {
-      const listedTarget = 6150;
-      const usersTarget = 3400;
-      const developersTarget = 60;
+      const listedTarget = 5993;
+      const usersTarget = 3234;
+      const developersTarget = 43;
 
-      const duration = 2000; // 2 seconds
+      const duration = 4000; // 2 seconds
       const frameRate = 30; // 30 frames per second
       const totalFrames = Math.round((duration / 1000) * frameRate);
 
@@ -50,17 +50,17 @@ const RealEstateExperience = () => {
 
         setListed(() => {
           const progress = Math.min(frame / totalFrames, 1);
-          return Math.floor(5993 + (listedTarget - 5993) * progress);
+          return Math.floor(4490 + (listedTarget - 4490) * progress);
         });
 
         setUsers(() => {
           const progress = Math.min(frame / totalFrames, 1);
-          return Math.floor(3234 + (usersTarget - 3234) * progress);
+          return Math.floor(3077 + (usersTarget - 3068) * progress);
         });
 
         setDevelopers(() => {
           const progress = Math.min(frame / totalFrames, 1);
-          return Math.floor(43 + (developersTarget - 43) * progress);
+          return Math.floor(17 + (developersTarget - 17) * progress);
         });
 
         if (frame === totalFrames) {
@@ -71,16 +71,16 @@ const RealEstateExperience = () => {
   }, [startCount]);
 
   return (
-    <Container className="pt-20 px-4 pb-8 md:px-0 md:pt-7.5 md:pb-30">
+    <Container className="pt-20 px-4 pb-8 md:px-0 md:pt-7.5 md:pb-45.5">
       <div ref={containerRef}>
         <Image
           src="/asset/makyee-logo.svg"
           width={108}
           height={108}
-          alt=""
+          alt="logo"
           className="pb-4 md:pb-2 mx-auto"
         />
-        <h2 className="font-inter font-bold text-2xl md:text-5xl/14 text-black text-center">
+        <h2 className="font-inter font-bold text-[22px]/6.5 md:text-5xl/14 text-black text-center">
           <span>{t("ESTATE_EXPERIENCE")}</span>
         </h2>
         <div className="pt-12.5 md:pt-20 flex flex-col md:flex-row items-center justify-center">

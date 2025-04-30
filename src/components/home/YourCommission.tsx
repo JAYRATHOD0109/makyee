@@ -1,22 +1,13 @@
 import { useTranslations } from "next-intl";
-import Container from "../common/Container";
 import Image from "next/image";
+import Container from "../common/Container";
 
 const YourCommission: React.FC = () => {
   const t = useTranslations("HomePage");
 
   return (
-    <div className="relative">
-      <div className="absolute ltr:-left-20 rtl:right-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
-        <div
-          className="w-full h-full rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(252,231,243,1) 0%, rgba(252,231,243,0.5) 50%, rgba(255,255,255,0) 80%)",
-          }}
-        ></div>
-      </div>
-      <Container className="pt-20 md:pt-30">
+    <>
+      <Container className="pt-20 px-4 md:px-0 md:pt-30 relative overflow-hidden">
         <div className="pb-8">
           <span className="text-primary-red text-base/6 font-semibold pb-4 text-center block font-plus-jakarta-sans">
             {t("YOUR_COMMISSION")}
@@ -56,10 +47,10 @@ const YourCommission: React.FC = () => {
         </div>
       </Container>
       <Container>
-        <p className="text-lg text-center mt-10 md:mt-16">
+        <p className="text-lg/6.5 text-center mt-10 md:mt-16 font-instrument-sans text-[#131315] font-medium">
           We were featured in
         </p>
-        <div className="py-3 md:py-4 my-6 md:my-8 relative overflow-hidden">
+        <div className="py-3 md:py-4 my-6 md:my-8 relative overflow-hidden max-w-205 mx-auto">
           <div className="relative flex animate-slide-left">
             <div className="flex-shrink-0 gap-5 md:gap-10 flex mx-5 justify-around space-x-6 w-[1440px]">
               <Image
@@ -178,7 +169,7 @@ const YourCommission: React.FC = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 

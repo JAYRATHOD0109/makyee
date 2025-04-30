@@ -1,7 +1,7 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../common/Container";
-import { useTranslations } from "next-intl";
 
 const Footer: React.FC = () => {
   const t = useTranslations("Footer");
@@ -32,29 +32,29 @@ const Footer: React.FC = () => {
         </span>
       </p>
       <div className="flex items-center justify-center pb-5 md:pb-0">
-        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-3.5 md:mr-4.5 hidden md:block">
+        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-3.5 md:mr-4.5 hidden md:block font-instrument-sans">
           {t("ITEM_1")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5 hidden md:block" />
-        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
+        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-instrument-sans font-medium mr-4.5">
           {t("ITEM_2")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
-        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
+        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-instrument-sans font-medium mr-4.5">
           {t("ITEM_3")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
-        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium mr-4.5">
+        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-instrument-sans font-medium mr-4.5">
           {t("ITEM_4")}
         </span>
         <div className="size-0.5 md:size-1 bg-[#28282C] rounded-full mr-3.5 md:mr-5" />
-        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-medium">
+        <span className="text-[#94969D] text-[13px]/4.5 md:text-lg/7 font-instrument-sans font-medium">
           {t("ITEM_5")}
         </span>
       </div>
       <hr className="text-[#1D1D20] mt-15 mb-10 h-px hidden md:block" />
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
-        <span className="text-[#94969D] text-lg/7 font-medium md:block hidden">
+        <span className="text-[#94969D] text-lg/7 font-medium md:block hidden font-instrument-sans">
           {t("DESIGN_BY")}
         </span>
         <div className="flex gap-2.5">
@@ -89,10 +89,10 @@ const Footer: React.FC = () => {
             </Link>
           </div>
         </div>
-        <span className="text-[#94969D] text-base/6 font-medium md:hidden block">
+        <span className="text-[#94969D] text-base/6 font-medium md:hidden block font-instrument-sans">
           © 2025 Makyee. All Rights Reserved.
         </span>
-        <span className="text-[#94969D] text-lg/7 font-medium">
+        <span className="text-[#94969D] text-lg/7 font-medium font-instrument-sans">
           {t("PRIVACY_POLICY")}
         </span>
       </div>

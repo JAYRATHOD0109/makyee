@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
 
 import Container from "../common/Container";
 
@@ -71,18 +71,9 @@ const OurNewest: React.FC = () => {
 
   return (
     <div className="relative">
-      <Container className="pt-15">
-        <div className="absolute ltr:right-0 rtl:left-0 top-52 w-96 h-96 overflow-hidden opacity-90 -z-10">
-          <div
-            className="w-full h-full rounded-full"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(252,231,243,1) 0%, rgba(252,231,243,0.5) 50%, rgba(255,255,255,0) 80%)",
-            }}
-          ></div>
-        </div>
-        <div className="pb-7.5">
-          <span className="text-primary-red text-base/6 font-semibold pb-3.5 text-center block font-plus-jakarta-sans">
+      <Container className="px-4 md:px-0 pt-15 md:pt-28">
+        <div className="pb-2 md:pb-7.5">
+          <span className="text-primary-red text-base/6 font-semibold pb-8.5 md:pb-3.5 text-center block font-plus-jakarta-sans">
             {t("OUR_NEWEST_YOUR_HIGHEST")}
           </span>
           <h2 className="text-dark-gunmetal text-3xl md:text-5xl/15 font-bold pb-3.5 text-center block font-plus-jakarta-sans">
@@ -92,7 +83,7 @@ const OurNewest: React.FC = () => {
             {t("WITH_MAKYEE")}
           </span>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16.5">
+        <div className="flex flex-col md:flex-row justify-center items-center md:gap-16.5">
           <div
             ref={firstImageRef}
             className={`transform transition-all duration-1000 ease-out ${
@@ -105,11 +96,12 @@ const OurNewest: React.FC = () => {
               src="/asset/immediate-withdraw.png"
               width={318}
               height={724}
-              alt=""
+              alt="immediate-withdraw"
+              className="max-w-48 md:max-w-80 h-auto"
             />
           </div>
-          <div className="bg-[linear-gradient(89.86deg,_#FFFFFF_0%,_#F8F8F8_6.5%)] px-6 py-6 md:pl-16.5 md:pr-6 max-w-132.5 rounded-3xl">
-            <h3 className="max-w-93 w-full font-inter font-semibold text-3xl md:text-5xl/12 text-dark-gunmetal pb-6">
+          <div className="bg-[linear-gradient(89.86deg,_#FFFFFF_0%,_#F8F8F8_6.5%)] px-2 py-4 md:py-6 md:pl-16.5 md:pr-6 max-w-132.5 rounded-3xl">
+            <h3 className="max-w-93 w-full font-inter font-bold md:font-semibold text-3xl/12 md:text-5xl/12 text-dark-gunmetal pb-6">
               <span className="">{t("IMMEDIATE_WITHDRAW")}</span>
             </h3>
             <p className="font-plus-jakarta-sans text-lg/6.5 text-[#5A616E] pb-6">
@@ -123,12 +115,11 @@ const OurNewest: React.FC = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="absolute top-0 -right-120 z-10 h-199 w-203 overflow-hidden opacity-20 [background:radial-gradient(25%_50%_at_50%_50%,#fd9292,#fff0)]" /> */}
       </Container>
-      <Container className="pt-5">
+      <Container className="pt-15 md:pt-5 px-4 md:px-0">
         <div className="flex flex-col-reverse md:flex-row justify-center items-center">
-          <div className="bg-[linear-gradient(89.82deg,_#F8F8F8_73.5%,_#FFFFFF_100%)] py-6 pl-6 pr-6 md:pr-16.5 max-w-132.5 rounded-3xl">
-            <h3 className="max-w-110 w-full font-inter font-semibold text-3xl md:text-5xl/12 text-dark-gunmetal pb-6">
+          <div className="bg-[linear-gradient(89.82deg,_#F8F8F8_73.5%,_#FFFFFF_100%)] py-4 px-2 md:pl-6 md:pr-16.5 max-w-132.5 rounded-3xl">
+            <h3 className="max-w-110 w-full font-inter font-bold md:font-semibold text-3xl/11 md:text-5xl/12 text-dark-gunmetal pb-6">
               <span className="">{t("COMMISSION_ON_COMPLETION")}</span>
             </h3>
             <p className="font-plus-jakarta-sans text-lg/6.5 text-[#5A616E] pb-6">
@@ -143,7 +134,7 @@ const OurNewest: React.FC = () => {
             <p className="text-[#80858F] text-base/6 font-semibold font-plus-jakarta-sans pb-8">
               {t("COMMISSION_EFFORTLESS")}
             </p>
-            <div ref={buttonRef} className="flex gap-5">
+            <div ref={buttonRef} className="px-2 md:px-0 flex gap-3 md:gap-5">
               <div
                 className={`transform transition-all duration-700 ease-out ${
                   isVisible
@@ -187,13 +178,14 @@ const OurNewest: React.FC = () => {
               src="/asset/commission.png"
               width={318}
               height={724}
-              alt=""
+              alt="commission"
+              className="max-w-48 md:max-w-80 h-auto"
             />
           </div>
         </div>
       </Container>
-      <Container className="pt-15">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16.5">
+      <Container className="pt-15 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row justify-center items-center md:gap-16.5">
           <div
             ref={thirdImageRef}
             className={`relative transform transition-all duration-1000 ease-out ${
@@ -207,17 +199,18 @@ const OurNewest: React.FC = () => {
               width={318}
               height={724}
               alt="multiple-withdraw"
+              className="max-w-48 md:max-w-80 h-auto"
             />
           </div>
-          <div className="bg-[linear-gradient(89.86deg,_#FFFFFF_0%,_#F8F8F8_6.5%)] py-6 pl-6 md:pl-16.5 pr-6 max-w-132.5 rounded-3xl">
-            <h3 className="max-w-110 w-full font-inter font-semibold text-3xl md:text-5xl/12 text-dark-gunmetal pb-6">
+          <div className="bg-[linear-gradient(89.86deg,_#FFFFFF_0%,_#F8F8F8_6.5%)] px-2 py-4 md:py-6 md:pl-16.5 pr-6 max-w-132.5 rounded-3xl">
+            <h3 className="max-w-110 w-full font-inter font-bold md:font-semibold text-3xl/12 md:text-5xl/12 text-dark-gunmetal pb-6">
               <span className="">{t("MULTIPLE_WITHDRAW_OPTIONS")}</span>
             </h3>
             <p className="font-plus-jakarta-sans text-lg/6.5 text-[#5A616E] pb-6">
               <span>{t("FAST_PAYOUT")}</span>
             </p>
             <div className="flex flex-wrap gap-4 md:gap-9.5">
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-2 md:px-4.5 w-fit border md:border-0 rounded-[19px] md:rounded-[28px]">
                 <Image
                   src="/asset/bank-transfer.svg"
                   width={24}
@@ -228,7 +221,7 @@ const OurNewest: React.FC = () => {
                   {t("BANK_TRANSFER")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-2.5 md:px-4.5 md:-fit border md:border-0 rounded-[19px] md:rounded-[28px]">
                 <Image
                   src="/asset/crypto.svg"
                   width={24}
@@ -239,7 +232,7 @@ const OurNewest: React.FC = () => {
                   {t("CRYPTO")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-2.5 md:px-4.5 w-fit border md:border-0 rounded-[19px] md:rounded-[28px]">
                 <Image
                   src="/asset/cheque.svg"
                   width={24}
@@ -250,7 +243,7 @@ const OurNewest: React.FC = () => {
                   {t("CHEQUE")}
                 </span>
               </div>
-              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-3 md:px-4.5 w-fit border md:border-0 rounded-[28px]">
+              <div className="flex gap-2 md:gap-6 items-center bg-[#F9FBFF] px-2 py-2.5 md:px-4.5 md:w-fit border md:border-0 rounded-[19px] md:rounded-[28px]">
                 <Image
                   src="/asset/cash.svg"
                   width={24}
